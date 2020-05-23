@@ -1,0 +1,21 @@
+javascript:
+coords = "602|700 599|701 600|694 602|705 600|710 606|702 598|700 598|699 596|694 603|703 599|693 598|693 595|691 597|695 592|692 594|689 603|694 604|694 605|694 579|689 572|679 580|689 578|689 575|683 581|697 581|696 583|697 561|665 546|654 547|654 544|657 562|660 536|657 550|657 543|657 540|667 547|657 579|686 578|688 577|690 575|684 559|637 552|642 576|686 575|691 577|691 579|696 585|687 586|687 583|685 583|681 577|677 577|680 581|686 575|681 584|685 583|688 582|690 587|686 581|690 581|692 580|693".split(" ");
+index = Math.round(Math.random() * (coords.length - 1));
+document.getElementsByClassName("target-input-field target-input-autocomplete ui-autocomplete-input")[0].value = coords[index];
+
+units("spear",0); //Pikinierzy
+units("sword",0); //Miecznicy
+units("axe",0); //Topornicy
+units("archer",0); //Lucznicy
+units("spy",1); //Zwiadowcy
+units("light",0); //Lekka Kawaleria
+units("marcher",0); //Lucznicy na Koniu
+units("heavy",0); //Ciezka Kawaleria
+units("ram",0); //Tarany
+units("catapult",25); //Katapulty
+units("snob",0); //Szlachcic
+
+function units(name, value) {
+	if(document.getElementById("unit_input_"+name)!== null)
+	{document.getElementById("unit_input_"+name).value=value;}}
+end;
