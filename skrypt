@@ -16,6 +16,5 @@ units("catapult",25); //Katapulty
 units("snob",0); //Szlachcic
 
 function units(name, value) {
-	if(document.getElementById("unit_input_"+name)!== null)
-	{document.getElementById("unit_input_"+name).value=value;}}
-end;
+if(document.getElementById("unit_input_"+name)!== null)
+{document.getElementById("unit_input_"+name).value=value;}}
